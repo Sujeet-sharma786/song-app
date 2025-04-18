@@ -31,7 +31,7 @@ const Home = () => {
         
       if(mp4Url){
         const encoded = encodeURIComponent(mp4Url);
-        setMp3Url(`http://localhost:5000/convert-mp3?url=${encoded}`);
+        setMp3Url(`https://song-app-backend-3zg3.onrender.com/convert-mp3?url=${encoded}`);
         console.log("converted-mp3-url",mp3Url);
         
         setTimeout(() => {
